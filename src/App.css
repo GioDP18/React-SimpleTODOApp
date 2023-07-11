@@ -1,0 +1,14 @@
+.app{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    flex-direction: column;
+    padding: 1.2em;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    background-image: linear-gradient(to right, #0040ff , #00bfff);
+    color: white;
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px 5px #003366;
+}

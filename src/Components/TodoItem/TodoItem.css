@@ -1,0 +1,52 @@
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #cc3300;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.todo-item > input{
+    cursor: pointer;
+}
+
+.btn-group > button{
+    margin-right: .5rem;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.todo-item > p{
+    justify-items: start;
+}
+
+#btn1{
+    background-color: #009900;
+}
+
+#btn2{
+    background-color: #cc3300;
+}
+
+.icon{
+    width: 1rem;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.bordered{
+    border: 2px solid #009900;
+}
+
+/* .item{
+    justify-self: start;
+} */
