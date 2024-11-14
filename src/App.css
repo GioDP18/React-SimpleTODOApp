@@ -1,14 +1,35 @@
-.app{
+.app {
     display: flex;
-    width: 400px;
+    width: 100%; /* Updated for responsiveness */
+    max-width: 400px;
     height: 600px;
     flex-direction: column;
     padding: 1.2em;
     border-radius: 10px;
-    margin: auto;
     align-items: center;
-    background-image: linear-gradient(to right, #0040ff , #00bfff);
+    background-image: linear-gradient(to right, #0040ff, #00bfff);
     color: white;
-    box-shadow: 10px 10px;
     box-shadow: 10px 10px 5px #003366;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .app {
+      width: 90%; /* Adjust width for tablet screens */
+      height: auto; /* Allow height to adapt based on content */
+      padding: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app {
+      width: 100%; /* Full width for mobile screens */
+      height: auto;
+      padding: 0.8em;
+      box-shadow: none; /* Remove shadow to simplify design */
+      border-radius: 5px;
+    }
+  
+    h1 {
+      font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+  }

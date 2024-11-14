@@ -18,8 +18,11 @@ const TodoItem = ({todo, changeStatus, deleteTodo, showEditForm}) => {
 
   return (
     <div className={`todo-item ${todo.completed ? "bordered" : ""}`}> 
-      <input type="checkbox" checked={todo.completed} onChange={handleChange}/>
-      <p className={`item ${todo.completed ? "done" : ""}`} style={{justifyItems: "start"}}>{todo.name}</p>
+      <div className='left'>
+        <input type="checkbox" checked={todo.completed} onChange={handleChange}/>
+        <p className={`item ${todo.completed ? "done" : ""}`} style={{justifyItems: "start"}}>{todo.name}</p>
+      </div>
+      
       <div className="btn-group">
         <button id='btn1' onClick={handleEdit}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="icon">

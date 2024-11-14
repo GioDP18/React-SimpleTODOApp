@@ -1,14 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Updated to allow scrolling on smaller screens */
   background-image: url(bg.jpg);
   background-size: cover;
+  background-position: center;
 }
