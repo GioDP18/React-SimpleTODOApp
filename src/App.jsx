@@ -7,7 +7,7 @@ import './App.css'
 import EditTodo from './Components/EditTodo/EditTodo';
 
 function App() {
-  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')));
+  const [todos, setTodos] = useState(JSON.parse(localStorage.getItem('todos')) ?? []);
   const [isEditing, setIsEditing] = useState(false)
   const [editTodo, setEditTodo] = useState({})
 
