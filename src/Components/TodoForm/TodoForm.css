@@ -1,5 +1,6 @@
 .todo-form{
     display: flex;
+    gap: 5px;
     width: 100%;
     justify-content: space-evenly;
     margin-top: 10px;
